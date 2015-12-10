@@ -1,0 +1,28 @@
+// Simple code to create a twinkeling lights using WS2812B Intelligent control LED string
+
+#include <Adafruit_NeoPixel.h> //this is the libary needed
+
+#define PIN 6    //pin 6 is the data output to the LED string
+
+int rr;          // all this is for setting variables to interger
+int rg;
+int rb;
+int LL; //OK I first used 'ln' for "led number" well 'n' can't be used, not sure why.
+        // I also tried 'll' and that did not pass Verify, that's lowercase L, not sure why.     
+ 
+Adafruit_NeoPixel leds = Adafruit_NeoPixel(15, PIN, NEO_GRB + NEO_KHZ800);
+
+void setup() {
+  leds.begin();   //not sure what this is - it's required
+  leds.show();    // Initialize all pixels to 'off' - need to test this...
+}
+
+void loop() {
+  rr = random(50);     // this sets a random number from 0 to 50 to the rr, rg, and rb variables
+  rg = random(50);     // keeping the max color brightness to 50 works great through my Tie
+  rb = random(50);     // higher numbers makes for brighter LED's - battery life will go down
+  LL = random(0, 16);  //this sets a number from 1 to 15 - the led number
+  leds.setPixelColor(LL, rr, rg, rb); // set color value for led number "LL"
+  leds.show();
+  delay(50);           // this value seems to work just right for a 15 led string
+}
