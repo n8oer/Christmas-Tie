@@ -17,6 +17,6 @@ Items needed for this project :
     
 SO you don't wear ties, well these lights can get real bright, so it's possible the light would shine through almost any seasonal clothing - like that crazy Christmas Sweater
 
-I have some pictures on a 'sway' page https://sway.com/OW7bDocmCxhg
+I have some pictures on a 'sway' page https://sway.com/OW7bDocmCxhg76nV
 
 Getting the LED's into or onto clothing is the real trick. I used thread and a needle to secure the LED's to the inside of the tie. This method is not real secure but a neck tie doesn't get any abuse, so the soldered connections don't see any stress, so far so good.
